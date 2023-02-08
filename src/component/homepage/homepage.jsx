@@ -59,7 +59,7 @@ export default function HomePage() {
                                     <div className="border-2 border-costumYellow mt-4 w-1/12 tablet:w-1/3"></div>
                                 </div>
                                 <div className="mt-8 text-white opacity-70">
-                                    <p>Hello, my full name is Muhamad Ilham Darmawan, everyone call me Ilham, I am a student from Syarif Hidayatullah Jakarta State Islamic University Jakarta, I am a beginner front end web developer who is looking for experience</p>
+                                    <p>Hello, my full name is Muhamad Ilham Darmawan, everyone call me Ilham, I am a student from <Link className="underline" to='https://www.uinjkt.ac.id/' target="_blank" rel="noopener noreferrer">Syarif Hidayatullah Jakarta State Islamic University, Jakarta</Link>. I am a beginner front end web developer who is looking for job</p>
                                     <p className="mt-8">My experience covers basic things like HTML, CSS, React, JavaSript, Tailwind, Bootstrap, and others. Of course, I'm also ready to learn new things</p>
                                 </div>
                                 <div className="flex mt-6">
