@@ -1,13 +1,38 @@
+// Initialized
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// Import Router
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+// Import Component
+import Homepage from './component/homepage/homepage';
+import Errorhandle from './component/errorhandle/errorhandle';
+import Gform from './component/gform/gform';
+
+// Create Router
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Homepage />,
+    errorElement: <Errorhandle />
+  },
+  {
+    path: "/Gform",
+    element: <Gform />,
+    errorElement: <Errorhandle />
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
